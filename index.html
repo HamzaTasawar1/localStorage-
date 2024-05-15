@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Form-Page</title>
+  </head>
+  <style>
+    body {
+      width: 100%;
+      max-width: 500px;
+      margin: 0 auto;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      height: 100vh;
+    }
+    
+    form {
+      display: flex;
+      flex-direction: column;
+      width: 100%;
+      max-width: 100%;
+    }
+    input[type="text"] {
+      margin: 15px 0px;
+      padding: 8px;
+      outline: none;
+    }
+    input[type="number"] {
+      margin: 15px 0px;
+      padding: 8px;
+      outline: none;
+    }
+    select#select1 {
+      margin: 15px 0px;
+      padding: 8px;
+      outline: none;
+    }
+    input[type="submit"] {
+      margin-top: 18px;
+      border: 1px solid;
+      padding: 20px;
+      border-radius: 38px;
+      font-size: 18px;
+      width: 141px;
+      outline: none;
+      cursor: pointer;
+    }
+    a {
+      font-size: 30px;
+      color: black;
+      margin-top: 20px;
+    }
+  </style>
+  <body>
+    <h1>Register Today</h1>
+    <p id="testing"></p>
+    <form>
+      <label for="fname">Name</label>
+      <input
+        type="text"
+        name="fname"
+        id="Fname"
+        placeholder="Enter Name"
+        required
+      />
+      <label for="phone">Phone Number</label>
+      <input
+        type="number"
+        name="phone"
+        id="phone"
+        placeholder="Enter Phone Number"
+        required
+      />
+      <label for="Email">Email</label>
+      <input
+        type="text"
+        name="Email"
+        id="email"
+        placeholder="Enter Email"
+        required
+      />
+      <label for="location">Location</label>
+      <select name="address" id="select1" >
+        <option value="rawalpindi">RawalPindi</option>
+        <option value="Islambad">Islambad</option>
+        <option value="lahore">lahore</option>
+      </select>
+
+      <input type="submit" placeholder="Submit" />
+    </form>
+    <a href="Table.html">View Full Form </a>
+    <script src="local.js"></script>
+  </body>
+</html>

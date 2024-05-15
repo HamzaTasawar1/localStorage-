@@ -1,0 +1,477 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Poppins"
+      rel="stylesheet"
+    />
+    <title>Email Template</title>
+  </head>
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+    body {
+      font-family: "Poppins";
+      background-color: #eceff3;
+    }
+
+    .multicolor::after {
+      content: url(svg.svg);
+      position: absolute;
+      bottom: 16px;
+    }
+    .multicolor::before {
+      content: url(svg2.svg);
+      position: absolute;
+      top: 30px;
+      left: -21px;
+    }
+
+    @media only screen and (max-width: 590px) {
+      .content-wrapper {
+        padding: 40px 12px 60px 13px !important;
+        max-width: 375px !important;
+      }
+      .image-block {
+        background-image: url(card_profile\ name2.png) !important;
+        display: block !important;
+        padding: 12px 12px 25px 33px !important;
+        margin: 38.6px auto 12px auto !important;
+      }
+      .image-block .arrow-img {
+        display: block !important;
+        text-align: end;
+        padding-bottom: 24px;
+      }
+      .image-block .button-block {
+        display: none !important;
+      }
+      .email-block {
+        display: block !important;
+      }
+      .first-block {
+        max-width: 350px !important;
+        margin: 0 auto 12px auto !important;
+        padding: 3px 4px 9px 12px !important;
+      }
+      .first-block .img-block {
+        padding-bottom: 0 !important;
+        display: flex;
+        align-items: end;
+        justify-content: end;
+      }
+      .second-block {
+        max-width: 350px !important;
+        height: 124px !important;
+        margin: 0 auto !important;
+        padding: 4px 4px 10px 12px !important;
+      }
+
+      .second-block .img-block {
+        padding-bottom: 0 !important;
+        display: flex;
+        align-items: end;
+        justify-content: end;
+      }
+      .experience-block {
+        background-image: url(card_resume2.png) !important;
+        width: 350px !important;
+        margin: 12px auto 0 !important;
+      }
+      .experience-block .button-block {
+        padding-top: 15px !important;
+      }
+      .info-block {
+        margin: 40px 0px 40px !important;
+      }
+      .info-block .border-block {
+        margin: 0 auto 16px !important;
+        width: auto !important;
+      }
+      .info-block .contact-block {
+        display: block !important;
+      }
+
+      .info-block .license-block {
+        padding: 27px 12px 11px !important;
+      }
+      .info-block .location-block {
+        padding: 27px 12px 11px !important;
+      }
+    }
+  </style>
+  <body onload="searchparameter()">
+    <div
+      class="content-wrapper"
+      style="
+        width: 100%;
+        max-width: 591px;
+        padding: 40px 21px 60px 30px;
+        margin: 0 auto;
+        background-image: url(bg-image.png);
+      "
+    >
+      <header class="header-block" style="text-align: center">
+        <h1>
+          Hi Casey, <br />
+          you have
+          <span
+            class="multicolor"
+            style="
+              position: relative;
+              background: rgb(69, 97, 245);
+              background: linear-gradient(
+                90deg,
+                rgba(69, 97, 245, 1) 0%,
+                rgba(167, 85, 238, 1) 35%,
+                rgba(79, 182, 247, 1) 100%
+              );
+              background-clip: text;
+              -webkit-background-clip: text;
+              -webkit-text-fill-color: transparent;
+            "
+            >new lead</span
+          >
+        </h1>
+      </header>
+      <div
+        class="image-block"
+        style="
+          background-image: url(card_profile\ name.png);
+          background-repeat: no-repeat;
+          padding: 56px 40px 36px;
+          margin: 32px 0 12px 0;
+          display: flex;
+          align-items: end;
+          justify-content: space-between;
+        "
+      >
+        <div class="arrow-img" style="display: none">
+          <img src="arrow.svg" alt="" />
+        </div>
+        <div class="content-block">
+          <h2 style="color: white; font-size: 40px" id="text">Morgan</h2>
+          <h2 style="color: #ffffff; opacity: 0.6; font-size: 40px" id="h2">
+            Maxwell
+          </h2>
+        </div>
+        <div
+          class="button-block"
+          style="display: flex; align-items: center; justify-content: center"
+        >
+          <a href="#" style="color: white; font-size: 16px"
+            >View full profile</a
+          >
+          <img src="arrow.svg" alt="" />
+        </div>
+      </div>
+
+      <div class="email-block" style="display: flex; align-items: center">
+        <div
+          class="first-block"
+          style="
+            background-color: #22ca1f;
+            width: 100%;
+            max-width: 264px;
+            padding: 4px 4px 12px 12px;
+            border-radius: 16px;
+            border: 8px solid rgba(255, 255, 255, 0.5);
+            margin-right: 12px;
+          "
+        >
+          <div class="img-block" style="padding-bottom: 77px; text-align: end">
+            <img src="arrow.svg" alt="" />
+          </div>
+          <div class="content-block">
+            <img src="svg_phone.svg" alt="" width="40px" />
+            <div class="link-block">
+              <a
+                href="#"
+                style="color: white; font-size: 16px; text-decoration: none"
+                id="number"
+                >239 555-0108</a
+              >
+            </div>
+          </div>
+        </div>
+        <div
+          class="second-block"
+          style="
+            background-color: #28b7f2;
+            width: 100%;
+            max-width: 264px;
+            padding: 4px 4px 12px 12px;
+            border-radius: 16px;
+            border: 8px solid rgba(255, 255, 255, 0.5);
+          "
+        >
+          <div class="img-block" style="padding-bottom: 77px; text-align: end">
+            <img src="arrow.svg" alt="" />
+          </div>
+          <div class="content-block">
+            <img src="email.svg" alt="" width="40px" />
+            <div class="link-block">
+              <a
+                class="first-anchor"
+                href="#"
+                style="color: white; font-size: 16px; text-decoration: none" id="email"
+                >morganmaxwell@gmail.com</a
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+      <div
+        class="experience-block"
+        style="
+          display: flex;
+          justify-content: space-between;
+          margin-top: 12px;
+          background-image: url('card_resume.png');
+          background-repeat: no-repeat;
+          padding: 12px 12px 16px 16px;
+        "
+      >
+        <div
+          class="button-block"
+          style="
+            display: flex;
+            flex-direction: column;
+            justify-content: end;
+            padding-top: 103px;
+          "
+        >
+          <img src="svg_resume.svg" alt="" width="56px" />
+          <a href="#" style="color: #ffffff; text-decoration: none"
+            >View Resume</a
+          >
+        </div>
+        <div class="link-block">
+          <img src="arrow.svg" alt="" />
+        </div>
+      </div>
+      <div class="info-block" style="margin: 40px 0px 46px">
+        <p style="text-align: center; font-weight: 600; margin-bottom: 12px">
+          Other info
+        </p>
+        <div
+          class="border-block"
+          style="
+            background: -webkit-gradient(
+              linear,
+              left top,
+              right bottom,
+              from(rgba(97, 95, 244, 0.4)),
+              to(rgba(102, 162, 246, 0.4))
+            );
+            border-radius: 16px;
+            padding: 4px;
+            margin-bottom: 12px;
+          "
+        >
+          <div
+            class="agent-block"
+            style="
+              padding: 26px 14px 10px;
+              border-radius: 16px;
+              background-color: #eceff3;
+            "
+          >
+            <p style="color: #393f3d">
+              What is your #1 asset as a new real estate agent?
+            </p>
+            <p style="font-weight: 600">
+              I have broad experience in the real estate industry and a lot of
+              area knowledge. I grew up in the area and have lived here for the
+              last 34 years.
+            </p>
+          </div>
+        </div>
+        <div class="contact-block" style="display: flex; margin-bottom: 12px">
+          <div
+            class="border-block"
+            style="
+              background: -webkit-gradient(
+                linear,
+                left top,
+                right bottom,
+                from(rgba(97, 95, 244, 0.4)),
+                to(rgba(102, 162, 246, 0.4))
+              );
+              border-radius: 16px;
+              padding: 4px;
+              margin-right: 14px;
+              width: 358px;
+            "
+          >
+            <div
+              class="weeks-block"
+              style="
+                padding: 26px 14px 10px;
+                border-radius: 16px;
+                background-color: #eceff3;
+              "
+            >
+              <p style="color: #393f3d">
+                When is the best time to contact you?
+              </p>
+              <div class="bold-block" style="font-weight: 600">
+                <p>Mondays: 12p-4p</p>
+                <p>Wednesday: 3p-6p</p>
+                <p>Saturday: all day</p>
+              </div>
+            </div>
+          </div>
+          <div
+            class="border-block"
+            style="
+              background: -webkit-gradient(
+                linear,
+                left top,
+                right bottom,
+                from(rgba(97, 95, 244, 0.4)),
+                to(rgba(102, 162, 246, 0.4))
+              );
+              border-radius: 16px;
+              padding: 4px;
+              width: 168px;
+            "
+          >
+            <div
+              class="license-block"
+              style="
+                padding: 76px 14px 10px;
+                border-radius: 16px;
+                background-color: #eceff3;
+                display: flex;
+                justify-content: end;
+                flex-direction: column;
+              "
+            >
+              <p style="color: #393f3d">Licensed</p>
+              <p style="font-weight: 600">Yes</p>
+            </div>
+          </div>
+        </div>
+        <div
+          class="border-block"
+          style="
+            background: -webkit-gradient(
+              linear,
+              left top,
+              right bottom,
+              from(rgba(97, 95, 244, 0.4)),
+              to(rgba(102, 162, 246, 0.4))
+            );
+            border-radius: 16px;
+            padding: 4px;
+            width: 168px;
+          "
+        >
+          <div
+            class="location-block"
+            style="
+              padding: 75px 12px 11px;
+              display: flex;
+              justify-content: end;
+              flex-direction: column;
+              border-radius: 16px;
+              background-color: #eceff3;
+            "
+          >
+            <p style="color: #393f3d">Location</p>
+            <p style="font-weight: 600">Downtown</p>
+          </div>
+        </div>
+      </div>
+      <div class="profile-block" style="padding: 40px 0px">
+        <div
+          class="first-btn"
+          style="display: flex; align-items: center; justify-content: center"
+        >
+          <div
+            class="all-profile"
+            style="
+              background: rgb(60, 60, 60);
+              background: linear-gradient(
+                90deg,
+                rgba(60, 60, 60, 1),
+                rgba(0, 0, 0, 1),
+                rgba(60, 60, 60, 1)
+              );
+              display: flex;
+              align-items: center;
+              justify-content: center;
+              border-radius: 16px;
+              border: 4px solid rgba(255, 255, 255, 0.5);
+              padding: 15.5px 69px;
+              cursor: pointer;
+            "
+          >
+            <p style="color: #ffffff; margin-right: 8px">View full profile</p>
+            <img src="arrow.svg" alt="" />
+          </div>
+        </div>
+        <div
+          class="all-profile"
+          style="
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding-top: 24px;
+          "
+        >
+          <a
+            href="#"
+            style="color: #666666; font-weight: 600; margin-right: 10px"
+            >Add to contacts</a
+          >
+          <img src="user-plus-2 1.svg" alt="" />
+        </div>
+      </div>
+
+      <footer
+        style="
+          margin: 46px 0px 0px;
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          align-items: center;
+          text-align: center;
+        "
+      >
+        <img src="svg_Logo.png" alt="" />
+        <p
+          style="
+            font-size: 12px;
+            width: 293px;
+            color: rgba(57, 63, 61, 0.7);
+            margin-top: 12px;
+          "
+        >
+          If you don’t want to receive this messages again, change your
+          <a href="#" style="color: #393f3d"> notification settings.</a>
+        </p>
+        <p
+          style="
+            color: rgba(57, 63, 61, 0.7);
+            font-size: 12px;
+            margin-top: 25px;
+          "
+        >
+          Made by
+          <a href="#" style="color: #393f3d"> Wright Brothers, Inc.</a>
+        </p>
+        <p style="color: rgba(57, 63, 61, 0.5); font-size: 12px">
+          9173 Chesapeake Dr., San Diego, CA 92123
+        </p>
+      </footer>
+    </div>
+    <script src="local.js"></script>
+  </body>
+</html>

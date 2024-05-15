@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Table-Page</title>
+</head>
+<style>
+    body {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        margin: 0;
+    }
+    .filter {
+    margin: 30px 0px;
+}   
+ input[type="text"] {
+      outline: none;
+    }
+    table {
+        width: 100%;
+        max-width: 50%;
+    }
+  table, th, td {
+    border:1.5px solid black;
+    border-collapse: collapse;
+  } 
+  th {
+    background-color: #D6EEEE;
+  }
+  th,td {
+  padding-top: 10px;
+  padding-bottom: 20px;
+  padding-left: 30px;
+  padding-right: 40px;
+  }
+tr {
+  text-align: center;
+}
+tr:nth-child(even) {
+  background-color: #eaeaea;
+}
+  </style>
+<body>
+   <h1>Table-Content</h1>
+   <h1 id="testing"></h1>
+   <div class="filter">
+   <input type="text" name="" id="search" placeholder="Input value" onkeyup="filter()">
+    
+   <select name="" id="select1"  onchange="filter()">
+    <option value="All">All</option>
+    <option value="RawalPindi">RawalPindi</option>
+    <option value="Islambad">Islambad</option>
+    <option value="lahore">lahore</option>
+   </select>
+   <button> button</button>  
+   <input type="submit" value="Ascending Order"  onclick="assending()">
+   <input type="submit" value="Descending Order" onclick="descending()">
+  </div>
+      <table style="width:100%" id="Table-content">
+        <thead>
+        <tr>
+          <th>Name</th>
+          <th>Phone</th>
+          <th>Email</th>
+          <th>Location</th>
+          <th>Email Template</th>
+          <th>Clear It</th>
+        </tr>
+      </thead>
+      <tbody id="table-body">
+
+      </tbody>
+      </table>
+   </table>
+    <script src="local.js"></script>
+</body>
+</html>
